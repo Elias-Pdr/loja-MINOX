@@ -1,0 +1,375 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.11);
+}
+header{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 4px;
+}
+#promocao{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#promocao img{
+    width: 20px;
+    margin-right: 10px;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+#container_left{
+    width: 96%;
+    margin: 0px 20px;
+}
+
+
+#container_left > div{
+    width: 90%;
+    margin: 0px auto 50px auto;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 16px;
+    color:#202223;
+    font-weight: bold;
+}
+p{
+    font-size: 14px;
+    color:#6D7175;
+    font-weight: normal;
+
+}
+.frete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio{
+    border: 2px solid #6D7175;
+    border-radius: 50px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+.container_2inputs{
+    display: flex;
+}
+.container_input{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.container_input label{
+    width: 100%;
+    height: 30%;
+    font-size: 12px;
+    color: #737373;
+    background-color: transparent;
+    display: none;
+}
+.container_input input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.container_infosPagamento{
+    margin-top: 0px;
+    padding: 10px 16px;
+    display: none;
+    color: #737373;
+    background-color: white;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 0px 0px 10px 10px;
+}
+.container_infosPagamento li{
+    margin: 8px 20px;
+}
+
+.style_button{
+    background: #40b76a;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin: 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#divisor{
+    display: none;
+}
+#container_right{
+    width: 96%;
+    text-align: center;
+    margin: 0px 10px;
+}
+.view_item{
+    border: 1px solid #73737334;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+}
+.view_item_top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.view_item_top img{
+    width: 200px;
+    border: 1px solid #7373738c;
+    border-radius: 10px;
+}
+.view_txt_top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nomeProduto{
+    width: 90%;
+    text-align: start;
+    margin: 10px 6px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#estimativaEntrega{
+    width: 90%;
+    color: #4A4A4A;
+    font-size: 14px;
+    margin: 6px;
+    text-align: start;
+
+}
+#garantia_txt{
+    margin: 6px;
+    width: 90%;
+    color: #808080;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+}
+
+.cupomDesconto{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #7373738c;
+    padding: 10px;
+    margin: 20px 0px;
+
+}
+.cupomDesconto p{
+    margin: 16px 0px;
+    font-size: 16px;
+    color: #A3A4A4;
+}
+.cupomDesconto span{
+    display: flex;
+    margin: 10px;
+}
+.cupomDesconto button{
+    background-color: #40b76a;
+    padding: 14px;
+    border: 1px solid #7373738c;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    letter-spacing: .4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+
+}
+.cupomDesconto button:hover{
+    background-color: #48e27e;
+
+}
+.cupomDesconto input{
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #7373738c;
+    padding: 16px;
+    text-align: center;
+    outline: none;
+}
+.view_item hr{
+    width: 100%;
+    margin: 20px 0px 5px 0px;
+}
+
+.view_item_buttom{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer_view_item{
+    width: 100%;
+}
+#btn_finalizar1{
+    display: block;
+}
+#btn_finalizar2{
+    display: none;
+    margin-bottom: 50px;
+}
+#mensagemErro,#mensagemErro2{
+    display: none;
+    color: red;
+}
+
+footer{
+    text-align: center;
+}
+.hr_footer {
+    opacity: 0.5;
+    width: 96%;
+    margin: auto;
+}
+.bottom-form-content{
+    margin: 30px 0px;
+}
+.bottom-form-images{
+    margin: 8px 0px;
+}
+.bottom-form-images img{
+    width: 130px;
+    opacity: 0.5;
+    margin: 0px 50px 20px 50px;
+
+}
+
+
+
+
+@media only screen and (max-width: 1250px){
+    .view_item_top{
+        flex-direction: column;
+    }
+    #nomeProduto{
+        width: 100%;
+    }
+    #estimativaEntrega{
+        width: 100%;
+    }
+    #garantia_txt{
+        width: 100%;
+    }
+    .view_item_top img{
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    main {
+        flex-direction: column;
+    }
+    #container_left{
+        width: 80%;
+        margin: 0px auto;
+    }
+    #container_right{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .view_item {
+        width: 100%;
+    }
+    #btn_finalizar1{
+        display: none;
+    }
+    #btn_finalizar2{
+        display: block;
+    }
+    #container_left > div{
+        width: 100%;
+    }
+    .view_item_top{
+        flex-direction: row;
+    }
+    #nomeProduto{
+        width: 90%;
+    }
+    #estimativaEntrega{
+        width: 90%;
+    }
+    #garantia_txt{
+        width: 90%;
+    }
+    .view_item_top img{
+        width: 200px;
+        margin-bottom: 0px;
+        border: 1px solid #7373738c;
+    }
+    #divisor{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 860px){
+
+    #container_left{
+        width: 90%;
+        margin: 0px auto;
+    }
+    #container_right{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .view_item_top{
+        flex-direction: column;
+    }
+    #nomeProduto{
+        width: 80%;
+    }
+    #estimativaEntrega{
+        width: 80%;
+    }
+    #garantia_txt{
+        width: 80%;
+    }
+    .view_item_top img{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+        border: none;
+
+    }
+
+}

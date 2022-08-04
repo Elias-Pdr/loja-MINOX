@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    background-color: #004e68;
+}
+.headerSuperior{
+    background-color: #00273e;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-variant: small-caps;
+}
+
+.menuBar{
+    background-color: #005c7a;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+    color: aliceblue;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.123);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuBar ul{
+    display: flex;
+    text-decoration: none;
+}
+.menuBar li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.menuBar a:hover{
+    color: #00a4db;
+    text-shadow: 0px 0px 20px black;
+}
+
+.headerInferior{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.containerLeft{
+    margin: 10px;
+    width: 60%;
+}
+.containerLeft h1{
+    font-size: 50px;
+    margin: 10px 0px;
+    color: aliceblue;
+
+}
+.containerLeft p{
+    font-size: 24px;
+    margin: 40px 0px;
+    color: aliceblue;
+}
+
+
+
+
+
+.containerbutton a{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+.containerbutton a:hover{
+    color: #004e68;
+    background: white;
+}
+.containerbutton a span{
+    position: absolute;
+    display: block;
+    background: white;
+}
+.containerbutton a:hover span{
+    background: none;
+}
+.containerbutton a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 1.25s;
+}
+
+.containerbutton a span:nth-child(2){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1.25s;
+}
+
+.containerbutton a span:nth-child(3){
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 1.25s;
+}
+
+.containerbutton a span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.25s;
+}
+
+
+
+
+
+
+
+
+.containerRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30%;
+    width: 50%;
+
+}
+.containerRight img{
+    width: 60%;
+    margin: 70px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-16px)
+	}
+}
+
+
+
+
+main{
+    box-shadow: 0px -1px 10px 5px #0000005c;
+    padding: 30px 0px;
+}
+
+.titulo_txt{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.titulo_txt h1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.titulo_txt p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6C757D;
+}
+
+
+.gridItems{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    background-color: #d6d6d642;
+    flex-direction: row;
+}
+
+
+.containerItens1,
+.containerItens2{
+    width: 50%;
+    display: flex;
+}
+
+.containerItens1 > div,
+.containerItens2 > div{
+    width: 50%;
+    margin: 10px;
+    padding: 10px 10px 5px 10px;
+    border: 2px solid rgba(204, 204, 204, 0.774);
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.containerItens1 > div:hover,
+.containerItens2 > div:hover{
+    border: 2px solid rgba(122, 122, 122, 0.774);
+    box-shadow: 0px 0px 20px 0px #0500305e;
+}
+
+#item1:hover .containerTag> div,
+#item2:hover .containerTag> div,
+#item3:hover .containerTag> div,
+#item4:hover .containerTag> div{
+    animation: changeColor 40s ;
+}
+
+@keyframes changeColor { 
+    0%{ 
+      background-color: transparent; 
+      border: 1px solid #016b8f;
+      color: blue;
+  
+    }  
+    2% { 
+        background-color: #016b8f; 
+        border: 1px solid transparent;
+        color: white;
+    
+    } 
+    100% { 
+        background-color: #016b8f; 
+        border: 1px solid transparent;
+        color: white;
+    } 
+  }
+
+#item1:hover img,
+#item2:hover img,
+#item3:hover img,
+#item4:hover img{
+    width: 100%;
+}
+
+
+.containerImgItensGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerImgItensGrid > img{
+    width: 98%;
+    margin: auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0px 0px;
+
+}
+.containerInfoItensGrid{
+    margin-top: 10px;
+}
+.containerTag{
+    display: flex;
+}
+.containerTag> div{
+    margin: 10px 0px 4px 0px;
+    border: 1px solid blue;
+    color: blue;
+    width: fit-content;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.containerBottonItensGrid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.precoItensGrid{
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursiva;
+}
+.numeroVendasItensGrid{
+    font-size: 12px;
+}
+footer{
+    background-color: #00273e;
+    color: #cfcfcf;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    padding: 14px 0px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){ 
+
+
+    .ultimoElemento{
+        display: none;
+    }
+    .containerItens1, 
+    .containerItens2{
+        width: 66.66%;
+    }
+    .containerItens2{
+        width: 33.33%;
+    }
+    .containerItens2 > div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){ 
+    .containerLeft img {
+        width: 100%;
+    }
+    .containerEconomia{
+        font-size: 14px;
+    }
+    .estimativaEntrega{
+        font-size: 14px;
+    }
+    .garantiaEdevolucao > div{
+        font-size: 14px;
+    }
+
+
+    .ultimoElemento{
+        display: block;
+    }
+    .penultimoElemento{
+        display: block;
+    }
+    .gridItems{
+        flex-direction: column;
+    }
+    .containerItens1,
+    .containerItens2{
+        width: 100%;
+    }
+    .containerItens2{
+        width: 100%;
+    }
+}
+
