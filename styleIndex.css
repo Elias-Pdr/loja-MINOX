@@ -23,7 +23,6 @@ header{
     padding: 10px 0px;
     font-variant: small-caps;
 }
-
 .menuBar{
     background-color: #005c7a;
     font-size: 30px;
@@ -50,6 +49,7 @@ header{
 }
 .menuBar svg{
     width: 20px;
+
 }
 .menuBar span:hover a,
 .menuBar span:hover svg{
