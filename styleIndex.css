@@ -43,7 +43,16 @@ header{
     font-size: 18px;
     font-weight: normal;
 }
-.menuBar a:hover{
+.menuBar span{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+.menuBar svg{
+    width: 20px;
+}
+.menuBar span:hover a,
+.menuBar span:hover svg{
     color: #00a4db;
     text-shadow: 0px 0px 20px black;
 }
@@ -345,6 +354,22 @@ main{
     font-size: 16px;
     font-weight: bold;
     color: #0196D1;
+    text-decoration: none;
+}
+
+.infosProduto button{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color: #0196D1;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.infosProduto svg{
+    fill: #0196D1;
+    background-color: #00273e;
 }
 
 

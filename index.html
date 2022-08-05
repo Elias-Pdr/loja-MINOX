@@ -15,7 +15,13 @@
         </div>
         <div class="menuBar">
             <p>NOME DA LOJA versão 0.03</p>
-            <a href="#" target="_blank">Fale conosco</a>
+            <span>
+                <a href="#" target="_blank">@InstagramDaLoja</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+            </span>
+
         </div>
         <div class="headerInferior">
             <div class="containerLeft">
@@ -50,7 +56,7 @@
             <span class="containerItens1" id="containerItens1ID">
                 <div id="item1" onclick="window.location.href = 'checkout.html'; clickItem('idImg1', 'nome1', 'precoItens1')">
                     <div class="containerImgItensGrid">
-                        <img id="idImg1" class="imgProduct" src="img/imgPadrao.png" alt="">
+                        <img id="idImg1" class="imgProduct" src="img/imgProduto_0003_1.png" alt="">
                     </div>
                     <div class="containerInfoItensGrid">
                         <p class="nomeItensGrid" id="nome1">Nome do produto - uma breve descrição</p>
@@ -70,7 +76,7 @@
                 </div>
                 <div id="item2" onclick="window.location.href = 'checkout.html'; clickItem('idImg2', 'nome2', 'precoItens2')">
                     <div class="containerImgItensGrid">
-                        <img id="idImg2" class="imgProduct" src="img/imgPadrao.png" alt="">
+                        <img id="idImg2" class="imgProduct" src="img/imgProduto_0002_2.png" alt="">
                     </div>
                     <div class="containerInfoItensGrid">
                         <p class="nomeItensGrid" id="nome2">Nome do produto - uma breve descrição</p>
@@ -92,7 +98,7 @@
             <span class="containerItens2">
                 <div id="item3" class="penultimoElemento" onclick="window.location.href = 'checkout.html'; clickItem('idImg3', 'nome3', 'precoItens3')">
                     <div class="containerImgItensGrid">
-                        <img id="idImg3" class="imgProduct" src="img/imgPadrao.png" alt="">
+                        <img id="idImg3" class="imgProduct" src="img/imgProduto_0000_4.png" alt="">
                     </div>
                     <div class="containerInfoItensGrid">
                         <p class="nomeItensGrid" id="nome3">Nome do produto - uma breve descrição</p>
@@ -112,7 +118,7 @@
                 </div>
                 <div id="item4" class="ultimoElemento" onclick="window.location.href = 'checkout.html'; clickItem('idImg4', 'nome4', 'precoItens4')">
                     <div class="containerImgItensGrid">
-                        <img id="idImg4" class="imgProduct" src="img/imgPadrao.png" alt="">
+                        <img id="idImg4" class="imgProduct" src="img/imgProduto_0005_6.png" alt="">
                     </div>
                     <div class="containerInfoItensGrid">
                         <p class="nomeItensGrid" id="nome4">Nome do produto - uma breve descrição</p>
@@ -142,14 +148,14 @@
             <span class="containerItens1" id="containerItens1ID">
                 <div id="item1">
                     <div class="containerImgItensGrid">
-                        <video style="width: 100%;" poster="img/ttk3.jpeg" controls="">
+                        <video onplay="controllerVideo('video1')" class="videosTtk" id="video1" style="width: 100%;" poster="img/ttk3.jpeg" controls="">
                             <source src="video/video1.mp4" type="video/mp4">
                         </video>                    
                     </div>
                 </div>
                 <div id="item2">
                     <div class="containerImgItensGrid">
-                        <video style="width: 100%;" poster="img/ttk4.jpeg" controls="">
+                        <video onplay="controllerVideo('video2')" class="videosTtk" id="video2" style="width: 100%;" poster="img/ttk4.jpeg" controls="">
                             <source src="video/video2.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -158,14 +164,14 @@
             <span class="containerItens2">
                 <div id="item3" class="penultimoElemento">
                     <div class="containerImgItensGrid">
-                        <video style="width: 100%;" poster="img/ttk1.jpeg" controls="">
+                        <video onplay="controllerVideo('video3')" class="videosTtk" id="video3" style="width: 100%;" poster="img/ttk1.jpeg" controls="">
                             <source src="video/video3.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div id="item4" class="ultimoElemento">
                     <div class="containerImgItensGrid">
-                        <video style="width: 100%;" poster="img/ttk2.jpeg" controls="">
+                        <video onplay="controllerVideo('video4')" class="videosTtk" id="video4" style="width: 100%;" poster="img/ttk2.jpeg" controls="">
                             <source src="video/video4.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -175,33 +181,19 @@
 
         <div class="infosProduto">
             <h1>Minoxidil: para que serve e como usar</h1>
-            <p>Revisão clínica:<a href="https://www.tuasaude.com/flavia-costa/" target="_blank" rel="noopener noreferrer">Flávia Costa</a>Farmacêutica</p>
+            <p>Revisão clínica: <a href="https://www.tuasaude.com/flavia-costa/" target="_blank" rel="noopener noreferrer">Flávia Costa</a> Farmacêutica</p>
             <p>A solução de minoxidil, que está disponível nas concentrações de 2% e 5%, é indicada para o tratamento e prevenção da queda de cabelo androgênica. O minoxidil é uma substância ativa que estimula o crescimento capilar, já que aumenta o calibre dos vasos sanguíneos, melhorando a circulação sanguínea no local, e prolonga a fase anágena, que é a fase de nascimento e crescimento do cabelo.</p>
 
             <h2>Para que serve</h2>
-            <p>A solução de minoxidil está indicada para o tratamento e prevenção da queda de cabelo androgênica.</p>
-            <p>Para usufruir ao máximo dos seus efeitos, é importante que a solução seja utilizada conforme a orientação do médico, o tratamento não seja interrompido e que o produto seja aplicado na região, seguido de uma massagem, para estimular a absorção do produto.</p>
+            <p id="texto1">A solução de minoxidil está indicada para o tratamento e prevenção da queda de cabelo androgênica... <button onclick="lerMais('texto1')">Ler mais</button></p>
 
             <h2>Como funciona o minoxidil?</h2>
-            <p>Inicialmente, esta substância era utilizada para baixar a pressão arterial em pessoas hipertensas, já que o minoxidil tem uma ação vasodilatadora. Só depois se descobriu que um dos efeitos colaterais nestas pessoas era o crescimento do cabelo.</p>
-            <p>Assim, o minoxidil passou a ser usado em solução no couro cabeludo, devido à sua ação vasodilatadora, que melhora a circulação sanguínea, promovendo a absorção de nutrientes no bolbo capilar. Sabe-se ainda que esta substância prolonga a fase anágena, que é a fase do ciclo capilar em que ocorre nascimento e crescimento dos fios.</p>
+            <p id="texto2">Inicialmente, esta substância era utilizada para baixar a pressão arterial em pessoas hipertensas... <button onclick="lerMais('texto2')">Ler mais</button></p>
 
             <h2>Como usar</h2>
-            <p>O uso de minoxidil só deve ser utilizado sob orientação médica. Geralmente, conforme a região a tratar, o minoxidil deve ser usado da seguinte forma:</p>
-            
-            <h3>1. Cabelo</h3>
-            <p>Para tratar a queda de cabelo, a solução de minoxidil pode ser aplicada diretamente na pele do couro cabeludo seco, nas regiões em que o cabelo está mais fraco, com a ajuda de uma massagem, duas vezes ao dia.</p>
-            <p>Geralmente, a quantidade que é aplicada de cada vez é de cerca de 1 mL e a duração do tratamento pode ser de cerca de 3 a 6 meses ou conforme indicação do clinico geral ou dermatologista.</p>
-
-            <h3>2. Barba</h3>
-            <p>Para preencher falhas da barba, o minoxidil pode ser aplicado da mesma forma que é aplicado no couro cabeludo, mas neste caso, o produto deve ser aplicado primeiro nas mãos e depois nas regiões da barba que se pretende tratar. Lavar as mãos após a aplicação do minoxidil na barba.</p>
-            <p>Depois de aplicar o produto, a pessoa deve passar um produto hidratante e nutritivo, como um óleo de coco ou amêndoas doces, por exemplo, para evitar o ressecamento e reduzir o cheiro do medicamento, já que ele tem uma grande quantidade de álcool, que seca a pele.</p>
-
-            <h3>3. Sobrancelha</h3>
-            <p>O minoxidil também pode ser usado para engrossar as sobrancelhas, aplicando a solução com a ajuda de um cotonete. Depois de aplicar o produto, também se pode passar um óleo na sobrancelha, para que não fique ressecada. Saiba como fazer a sobrancelha crescer e engrossar.</p>
+            <p id="texto3">O uso de minoxidil só deve ser utilizado sob orientação médica. Geralmente, conforme a região a tratar... <button onclick="lerMais('texto3')">Ler mais</button></p>
 
         </div>
-
 
 
     </main>
@@ -213,6 +205,51 @@
 
 
     <script>
+        function lerMais(idTxt) {
+            let texto = document.getElementById(idTxt)
+
+            if(idTxt == 'texto1'){
+                texto.innerHTML = '<p>A solução de minoxidil está indicada para o tratamento e prevenção da queda de cabelo androgênica.</p><p>Para usufruir ao máximo dos seus efeitos, é importante que a solução seja utilizada conforme a orientação do médico, o tratamento não seja interrompido e que o produto seja aplicado na região, seguido de uma massagem, para estimular a absorção do produto.</p>'
+            }
+            if(idTxt == 'texto2'){
+                texto.innerHTML = '<p>Inicialmente, esta substância era utilizada para baixar a pressão arterial em pessoas hipertensas, já que o minoxidil tem uma ação vasodilatadora. Só depois se descobriu que um dos efeitos colaterais nestas pessoas era o crescimento do cabelo.</p><p>Assim, o minoxidil passou a ser usado em solução no couro cabeludo, devido à sua ação vasodilatadora, que melhora a circulação sanguínea, promovendo a absorção de nutrientes no bolbo capilar. Sabe-se ainda que esta substância prolonga a fase anágena, que é a fase do ciclo capilar em que ocorre nascimento e crescimento dos fios.</p>'
+            }
+            if(idTxt == 'texto3'){
+                texto.innerHTML = '<p>O uso de minoxidil só deve ser utilizado sob orientação médica. Geralmente, conforme a região a tratar, o minoxidil deve ser usado da seguinte forma:</p><h3>1. Cabelo</h3><p>Para tratar a queda de cabelo, a solução de minoxidil pode ser aplicada diretamente na pele do couro cabeludo seco, nas regiões em que o cabelo está mais fraco, com a ajuda de uma massagem, duas vezes ao dia.</p><p>Geralmente, a quantidade que é aplicada de cada vez é de cerca de 1 mL e a duração do tratamento pode ser de cerca de 3 a 6 meses ou conforme indicação do clinico geral ou dermatologista.</p><h3>2. Barba</h3><p>Para preencher falhas da barba, o minoxidil pode ser aplicado da mesma forma que é aplicado no couro cabeludo, mas neste caso, o produto deve ser aplicado primeiro nas mãos e depois nas regiões da barba que se pretende tratar. Lavar as mãos após a aplicação do minoxidil na barba.</p><p>Depois de aplicar o produto, a pessoa deve passar um produto hidratante e nutritivo, como um óleo de coco ou amêndoas doces, por exemplo, para evitar o ressecamento e reduzir o cheiro do medicamento, já que ele tem uma grande quantidade de álcool, que seca a pele.</p><h3>3. Sobrancelha</h3><p>O minoxidil também pode ser usado para engrossar as sobrancelhas, aplicando a solução com a ajuda de um cotonete. Depois de aplicar o produto, também se pode passar um óleo na sobrancelha, para que não fique ressecada. Saiba como fazer a sobrancelha crescer e engrossar.</p>'
+            }
+            
+        }
+
+        function controllerVideo(idVideo) {
+            if (idVideo == "video1") {
+                document.getElementById("video1").play()
+                document.getElementById("video2").pause()
+                document.getElementById("video3").pause()
+                document.getElementById("video4").pause()
+                
+            }
+            if(idVideo == "video2") {
+                document.getElementById("video1").pause()
+                document.getElementById("video2").play()
+                document.getElementById("video3").pause()
+                document.getElementById("video4").pause()
+
+            }
+            if(idVideo == "video3") {
+                document.getElementById("video1").pause()
+                document.getElementById("video2").pause()
+                document.getElementById("video3").play()
+                document.getElementById("video4").pause()
+
+            }
+            if(idVideo == "video4") {
+                document.getElementById("video1").pause()
+                document.getElementById("video2").pause()
+                document.getElementById("video3").pause()
+                document.getElementById("video4").play()
+            }
+        }
+
         function animacaoBtn() {
                
             let span1 = document.getElementById('span1')
